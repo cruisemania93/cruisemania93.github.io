@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Verified — CruiseMania</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .card { background: #fff; border-radius: 16px; padding: 48px 32px; max-width: 400px; width: 90%; text-align: center; box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
+  .icon { font-size: 64px; margin-bottom: 16px; }
+  h1 { font-size: 24px; font-weight: 700; color: #0A2540; margin-bottom: 12px; }
+  p { font-size: 15px; color: #6b7280; margin-bottom: 24px; line-height: 1.6; }
+  .btn { display: inline-block; background: #0A2540; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; }
+  .btn:hover { background: #1a3a5c; }
+  .sub { font-size: 13px; color: #9ca3af; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">&#10003;</div>
+  <h1>Email Verified!</h1>
+  <p>Your email has been verified successfully.<br>You can now log in to CruiseMania.</p>
+  <a class="btn" href="cruisemania://">Open App</a>
+  <p class="sub">If the button doesn't work, open the CruiseMania app manually and log in.</p>
+</div>
+<script>
+  // Try to auto-open the app
+  if (window.location.hash) {
+    window.location.href = 'cruisemania://' + window.location.hash;
+  }
+</script>
+</body>
+</html>
