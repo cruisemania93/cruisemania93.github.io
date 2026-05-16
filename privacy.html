@@ -3,519 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — CruiseMania</title>
+<title>CruiseMania - Privacy Policy / 개인정보처리방침</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a1a; line-height: 1.7; }
-  .header { background: #0A2540; color: #fff; padding: 40px 20px; text-align: center; }
-  .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
-  .header p { font-size: 14px; opacity: 0.7; }
-  .lang-bar { display: flex; justify-content: center; gap: 8px; padding: 16px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 10; }
-  .lang-btn { padding: 6px 16px; border: 1px solid #d1d5db; border-radius: 20px; background: #fff; color: #374151; font-size: 14px; cursor: pointer; transition: all 0.2s; }
-  .lang-btn.active { background: #0A2540; color: #fff; border-color: #0A2540; }
-  .content { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
-  .content section { display: none; }
-  .content section.active { display: block; }
-  .content h2 { font-size: 20px; font-weight: 700; margin-bottom: 20px; color: #0A2540; }
-  .content pre { white-space: pre-wrap; word-wrap: break-word; font-family: inherit; font-size: 15px; line-height: 1.8; }
-  .footer { text-align: center; padding: 24px 20px; color: #9ca3af; font-size: 13px; border-top: 1px solid #e5e7eb; }
-  .footer a { color: #0A2540; text-decoration: none; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; }
+  h1 { font-size: 24px; border-bottom: 2px solid #0077B6; padding-bottom: 10px; }
+  h2 { font-size: 18px; color: #0077B6; margin-top: 30px; }
+  h3 { font-size: 15px; margin-top: 20px; }
+  .lang-toggle { text-align: right; margin-bottom: 20px; }
+  .lang-toggle a { color: #0077B6; text-decoration: none; font-weight: bold; }
+  .section { margin-bottom: 20px; }
+  ul { padding-left: 20px; }
+  .updated { color: #666; font-size: 14px; }
+  hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>CruiseMania</h1>
-  <p>Privacy Policy</p>
+<h1>개인정보처리방침</h1>
+<p class="updated">최종 업데이트: 2026년 5월 17일</p>
+
+<div class="section">
+<p>크루즈매니아(이하 "앱")는 이용자의 개인정보를 소중히 여기며, 관련 법령에 따라 개인정보를 보호하고 있습니다. 본 개인정보처리방침은 앱이 어떤 정보를 수집하고 어떻게 활용하는지 안내합니다.</p>
 </div>
 
-<div class="lang-bar">
-  <button class="lang-btn active" onclick="switchLang('ko')">한국어</button>
-  <button class="lang-btn" onclick="switchLang('en')">English</button>
-  <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
-  <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+<h2>1. 수집하는 정보</h2>
+<div class="section">
+<p>본 앱은 <strong>회원가입 기능이 없으며</strong>, 이용자의 개인정보(이메일, 비밀번호, 이름 등)를 직접 수집하지 않습니다.</p>
+
+<h3>자동으로 수집되는 정보</h3>
+<p>앱의 안정성과 품질 향상을 위해 다음 정보가 자동으로 수집될 수 있습니다:</p>
+<ul>
+  <li>비정상 종료(크래시) 로그 — Firebase Crashlytics</li>
+  <li>앱 사용 통계 (화면 조회 등) — Firebase Analytics</li>
+  <li>기기 식별자 — Firebase에서 자동 생성</li>
+  <li>기기 정보 (OS 버전, 기기 모델)</li>
+</ul>
+<p>위 정보는 개인을 식별할 수 없는 익명화된 데이터입니다.</p>
+
+<h3>이용자가 직접 입력하는 정보</h3>
+<ul>
+  <li>크루즈 일정 플래너에 입력하는 여행 계획 (기기 내 저장)</li>
+  <li>크루즈 콜렉터에 기록하는 여행 경험 (기기 내 저장)</li>
+  <li>문의하기를 통해 전송하는 이메일, 제목, 내용</li>
+</ul>
 </div>
 
-<div class="content">
-
-<section id="ko" class="active">
-<h2>개인정보처리방침</h2>
-<pre>
-크루즈 앱(이하 "앱")은 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.
-
-제1조 (수집하는 개인정보)
-앱은 서비스 제공을 위해 다음 개인정보를 수집합니다.
-1. 필수 항목: 이메일 주소, 비밀번호, 닉네임
-2. 선택 항목: 프로필 이미지, 자기소개
-3. 서비스 이용 과정에서 이용자가 직접 입력·생성하는 정보
-   가. 리뷰: 제목, 내용, 별점(종합 및 세부 항목), 선실 유형, 여행 시기, 첨부 이미지
-   나. 커뮤니티 게시글: 제목, 내용, 첨부 이미지
-   다. 댓글 및 좋아요
-   라. 여행 일정: 일정 제목, 여행 날짜, 활동 계획(시간, 장소, 메모, 예상 비용)
-   마. 고객 문의: 이메일 주소, 제목, 문의 내용
-4. 자동으로 생성되는 정보: 계정 생성일시, 콘텐츠 작성·수정 일시
-
-제2조 (개인정보의 수집 방법)
-앱은 다음과 같은 방법으로 개인정보를 수집합니다.
-1. 회원가입 시 이용자가 직접 입력
-2. 서비스 이용 과정에서 이용자가 직접 작성(리뷰, 게시글, 댓글, 일정, 문의 등)
-3. 프로필 설정 시 이용자가 직접 등록(프로필 이미지, 자기소개)
-
-제3조 (개인정보의 수집 및 이용 목적)
-수집한 개인정보는 다음 목적으로만 이용합니다.
-1. 회원 가입 및 관리: 본인 확인, 가입 의사 확인, 회원 식별
-2. 서비스 제공: 리뷰 작성·열람, 커뮤니티 게시글 작성·열람, 여행 일정 관리 등 서비스 기능 제공
-3. 고객 문의 응대: 문의사항 확인 및 처리 결과 통보
-
-제4조 (개인정보의 보유 및 이용 기간)
-1. 회원의 개인정보는 회원 탈퇴 시까지 보유하며, 탈퇴 요청 시 지체 없이 파기합니다.
-2. 다만, 이용약관 제6조에 따라 회원이 작성한 게시물(리뷰, 댓글, 게시글)은 탈퇴 후에도 서비스 내에 유지되며, 작성자 정보는 비식별 처리("탈퇴한 사용자")됩니다. 게시물의 삭제를 원하는 경우 탈퇴 전에 직접 삭제하시거나 개인정보 보호책임자(privacy@cruise-app.com)에게 요청하시기 바랍니다. 개인정보 보호책임자에게 요청하는 경우, 본인 확인 후 30일 이내에 해당 게시물을 삭제합니다.
-3. 관련 법령에 의해 보존이 의무화된 정보가 있는 경우 해당 법령이 정하는 기간 동안 보존합니다.
-4. 부정 이용 방지를 위한 기록(이메일 해시값): 탈퇴 후 30일간 보존 후 파기
-
-제5조 (개인정보의 제3자 제공)
-앱은 원칙적으로 이용자의 동의 없이 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우에는 예외로 합니다.
-1. 이용자가 사전에 동의한 경우
-2. 법령에 의해 요구되는 경우
-
-제6조 (개인정보 처리의 위탁)
-앱은 서비스 제공을 위해 다음과 같이 개인정보 처리를 위탁하고 있습니다.
-1. 수탁자: Supabase Inc.
-   위탁 업무: 클라우드 인프라 제공(데이터 저장, 인증 처리, 파일 저장)
-   서버 위치: 해외(미국)
-   보유 기간: 회원 탈퇴 시 또는 위탁 계약 종료 시까지
-운영팀은 위탁 업무 수행 목적 외에 개인정보 처리를 금지하며, 기술적·관리적 보호 조치, 재위탁 제한, 수탁자에 대한 관리·감독 등 「개인정보 보호법」 제26조에 따른 사항을 계약서 등에 명시하고 수탁자가 개인정보를 안전하게 처리하도록 관리·감독합니다.
-
-제7조 (개인정보의 국외 이전)
-앱은 서비스 제공을 위해 다음과 같이 개인정보를 국외로 이전합니다.
-1. 이전받는 자: Supabase Inc.
-2. 이전되는 국가: 미국
-3. 이전 일시 및 방법: 서비스 이용 시점에 네트워크를 통한 전송
-4. 이전되는 개인정보 항목: 제1조에 기재된 모든 수집 항목
-5. 이전받는 자의 이용 목적: 클라우드 인프라 제공(데이터 저장, 인증 처리, 파일 저장)
-6. 이전받는 자의 보유 및 이용 기간: 회원 탈퇴 시 또는 위탁 계약 종료 시까지
-
-제8조 (개인정보의 파기)
-1. 보유 기간 경과 또는 처리 목적 달성 시 지체 없이 파기합니다.
-2. 전자적 파일 형태의 정보는 복구 및 재생이 불가능한 기술적 방법으로 삭제합니다.
-3. Supabase Storage에 저장된 이미지 파일(프로필 사진, 리뷰·게시글 첨부 이미지)은 회원 탈퇴 시 함께 삭제합니다.
-
-제9조 (이용자의 권리 및 행사 방법)
-이용자는 다음의 권리를 행사할 수 있습니다.
-1. 개인정보 열람 요구
-2. 개인정보 정정·삭제 요구
-3. 개인정보 처리 정지 요구
-4. 개인정보 수집·이용·제공에 대한 동의 철회
-
-위 권리는 앱 내 설정 화면(프로필 편집, 회원탈퇴) 또는 개인정보 보호책임자에게 이메일로 요청하여 행사할 수 있으며, 운영팀은 지체 없이 필요한 조치를 취합니다.
-
-제10조 (개인정보의 안전성 확보 조치)
-앱은 개인정보의 안전성 확보를 위해 다음 조치를 시행하고 있습니다.
-1. 비밀번호 암호화: 회원의 비밀번호는 암호화되어 저장·관리되며, 운영팀도 이를 알 수 없습니다.
-2. 인증 토큰 보안 저장: 로그인 세션 정보는 기기의 보안 저장소(iOS Keychain / Android Keystore)에 암호화하여 저장합니다.
-3. 접근 통제: 개인정보를 처리하는 시스템에 대한 접근 권한을 제한하고 있습니다.
-4. 데이터 암호화 전송: 개인정보는 암호화된 통신(SSL/TLS)을 통해 전송됩니다.
-
-제11조 (자동 수집 장치에 관한 사항)
-앱은 쿠키(cookie)를 사용하지 않습니다. 앱은 서비스 설정 정보(언어, 테마, 알림 설정, 약관 동의 여부 등)를 기기 내부 저장소(AsyncStorage)에 저장하며, 이 정보는 외부로 전송되지 않고 기기 내에서만 사용됩니다. 앱은 광고 식별자, 기기 고유 식별자 등 이용자를 추적하기 위한 자동 수집 장치를 사용하지 않습니다.
-
-제12조 (만 14세 미만 아동의 개인정보)
-앱은 만 14세 미만 아동의 회원가입을 받지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다.
-
-제13조 (개인정보 보호책임자)
-개인정보 처리에 관한 업무를 총괄하는 개인정보 보호책임자는 다음과 같습니다.
-• 성명: 크루즈매니아 개인정보 보호팀
-• 직위: 개인정보 보호책임자
-• 이메일: privacy@cruise-app.com
-이용자는 서비스 이용 중 발생한 개인정보 관련 문의, 불만, 피해 구제 등을 위 연락처로 문의하실 수 있습니다.
-
-제14조 (권익침해 구제방법)
-이용자는 개인정보 침해에 대한 피해 구제를 아래 기관에 문의할 수 있습니다.
-• 개인정보분쟁조정위원회: (국번 없이) 1833-6972 (www.kopico.go.kr)
-• 개인정보침해신고센터: (국번 없이) 118 (privacy.kisa.or.kr)
-• 대검찰청 사이버수사과: (국번 없이) 1301 (www.spo.go.kr)
-• 경찰청 사이버수사국: (국번 없이) 182 (ecrm.cyber.go.kr)
-
-제15조 (개인정보 유출 통지)
-1. 운영팀은 개인정보 유출 사고가 발생한 경우, 인지한 시점으로부터 72시간 이내에 이용자에게 다음 사항을 통지합니다:
-   가. 유출된 개인정보 항목
-   나. 유출 시점 및 경위
-   다. 이용자가 취할 수 있는 조치
-   라. 운영팀의 대응 조치 및 피해 구제 절차
-   마. 이용자가 상담할 수 있는 연락처
-2. 통지는 앱 내 공지사항, 이메일 또는 기타 적절한 수단을 통해 이루어집니다.
-3. 유출 사고가 관련 법령에서 정한 규모 이상인 경우, 관계 기관(개인정보보호위원회, 한국인터넷진흥원 등)에 즉시 신고합니다.
-
-제16조 (개인정보 처리방침의 변경)
-이 개인정보 처리방침은 시행일로부터 적용되며, 법령이나 방침의 변경이 있는 경우 변경 사항을 앱 내 공지사항을 통해 적용일 7일 전부터 공지합니다.
-
-부칙
-이 개인정보 처리방침은 2026년 1월 1일부터 시행합니다.
-</pre>
-</section>
-
-<section id="en">
-<h2>Privacy Policy</h2>
-<pre>
-The Cruise App (hereinafter "App") establishes and discloses the following Privacy Policy in accordance with the Personal Information Protection Act to protect the personal information of users and to ensure prompt and smooth resolution of related grievances.
-
-Article 1 (Personal Information Collected)
-The App collects the following personal information for the provision of the Service.
-1. Required items: Email address, password, nickname
-2. Optional items: Profile image, bio
-3. Information directly entered or generated by users during use of the Service
-   a. Reviews: Title, content, ratings (overall and sub-categories), cabin type, travel period, attached images
-   b. Community posts: Title, content, attached images
-   c. Comments and likes
-   d. Travel itineraries: Itinerary title, travel dates, activity plans (time, location, notes, estimated costs)
-   e. Customer inquiries: Email address, subject, inquiry content
-4. Automatically generated information: Account creation date/time, content creation/modification date/time
-
-Article 2 (Methods of Collecting Personal Information)
-The App collects personal information through the following methods.
-1. Direct input by the user during registration
-2. Direct input by the user during use of the Service (reviews, posts, comments, itineraries, inquiries, etc.)
-3. Direct registration by the user in profile settings (profile image, bio)
-
-Article 3 (Purpose of Collection and Use of Personal Information)
-Collected personal information is used only for the following purposes.
-1. Membership registration and management: Identity verification, confirmation of intent to register, member identification
-2. Service provision: Providing service functions such as writing and browsing reviews, writing and browsing community posts, and managing travel itineraries
-3. Customer inquiry response: Confirming inquiries and notifying processing results
-
-Article 4 (Retention and Use Period of Personal Information)
-1. Members' personal information is retained until membership withdrawal, and is destroyed without delay upon withdrawal request.
-2. However, in accordance with Article 6 of the Terms of Service, content posted by Members (reviews, comments, posts) shall be retained within the Service after withdrawal, and the author information shall be de-identified ("Deleted User"). If you wish to delete your content, please delete it prior to withdrawal or request deletion from the Privacy Officer (privacy@cruise-app.com). Upon request to the Privacy Officer, the relevant content shall be deleted within 30 days after identity verification.
-3. If retention is required by applicable laws, the information shall be retained for the period prescribed by such laws.
-4. Records for prevention of fraudulent use (email hash value): Retained for 30 days after withdrawal, then destroyed
-
-Article 5 (Provision of Personal Information to Third Parties)
-The App does not, in principle, provide personal information to third parties without the user's consent. However, exceptions are made in the following cases:
-1. When the user has given prior consent
-2. When required by law
-
-Article 6 (Outsourcing of Personal Information Processing)
-The App outsources personal information processing as follows for the provision of the Service.
-1. Outsourcing recipient: Supabase Inc.
-   Outsourced tasks: Provision of cloud infrastructure (data storage, authentication processing, file storage)
-   Server location: Overseas (United States)
-   Retention period: Until membership withdrawal or termination of the outsourcing contract
-The operating team prohibits the processing of personal information beyond the scope of the outsourced tasks and specifies in contracts the matters required by Article 26 of the Personal Information Protection Act, including technical and administrative protective measures, restrictions on re-outsourcing, and supervision of outsourcing recipients, to ensure that outsourcing recipients process personal information securely.
-
-Article 7 (International Transfer of Personal Information)
-The App transfers personal information overseas as follows for the provision of the Service.
-1. Recipient: Supabase Inc.
-2. Country of transfer: United States
-3. Date and method of transfer: Transmission via network at the time of service use
-4. Personal information items transferred: All items collected as specified in Article 1
-5. Purpose of use by the recipient: Provision of cloud infrastructure (data storage, authentication processing, file storage)
-6. Retention and use period by the recipient: Until membership withdrawal or termination of the outsourcing contract
-
-Article 8 (Destruction of Personal Information)
-1. Personal information shall be destroyed without delay when the retention period has elapsed or the processing purpose has been achieved.
-2. Information in electronic file format shall be deleted using technical methods that prevent recovery and reproduction.
-3. Image files stored on Supabase Storage (profile photos, review and post attachments) shall be deleted upon membership withdrawal.
-
-Article 9 (Rights of Users and Methods of Exercise)
-Users may exercise the following rights.
-1. Request to access personal information
-2. Request to correct or delete personal information
-3. Request to suspend processing of personal information
-4. Withdraw consent to the collection, use, and provision of personal information
-
-These rights may be exercised through the settings screen within the App (profile editing, membership withdrawal) or by contacting the Privacy Officer by email, and the operating team shall take the necessary measures without delay.
-
-Article 10 (Measures to Ensure the Security of Personal Information)
-The App implements the following measures to ensure the security of personal information.
-1. Password encryption: Members' passwords are encrypted for storage and management, and cannot be known even by the operating team.
-2. Secure storage of authentication tokens: Login session information is encrypted and stored in the device's secure storage (iOS Keychain / Android Keystore).
-3. Access control: Access to systems that process personal information is restricted.
-4. Encrypted data transmission: Personal information is transmitted through encrypted communications (SSL/TLS).
-
-Article 11 (Automated Collection Devices)
-The App does not use cookies. The App stores service configuration information (language, theme, notification settings, terms agreement status, etc.) in the device's internal storage (AsyncStorage), and this information is not transmitted externally and is used only within the device. The App does not use automated collection devices for tracking users, such as advertising identifiers or device unique identifiers.
-
-Article 12 (Personal Information of Children Under 14)
-The App does not accept membership registration from children under the age of 14 and does not collect personal information of children under the age of 14.
-
-Article 13 (Privacy Officer)
-The Privacy Officer responsible for overall personal information processing is as follows.
-• Name: CruiseMania Privacy Protection Team
-• Title: Privacy Officer
-• Email: privacy@cruise-app.com
-Users may contact the above for inquiries, complaints, or remedies related to personal information arising during use of the Service.
-
-Article 14 (Remedies for Rights Infringement)
-Users may contact the following organizations for remedies regarding personal information infringement.
-• Personal Information Dispute Mediation Committee: (no area code) 1833-6972 (www.kopico.go.kr)
-• Personal Information Infringement Report Center: (no area code) 118 (privacy.kisa.or.kr)
-• Supreme Prosecutors' Office Cyber Investigation Division: (no area code) 1301 (www.spo.go.kr)
-• National Police Agency Cyber Investigation Bureau: (no area code) 182 (ecrm.cyber.go.kr)
-
-Article 15 (Data Breach Notification)
-1. In the event of a personal information breach, the operating team shall notify the affected users within 72 hours of becoming aware of the incident, including the following information:
-   a. The personal information items that were breached
-   b. The time and circumstances of the breach
-   c. Measures that users can take
-   d. The operating team's response measures and remedy procedures
-   e. Contact information for user consultations
-2. Notification shall be made through in-app announcements, email, or other appropriate means.
-3. If the breach reaches the scale prescribed by applicable laws, the operating team shall promptly report it to the relevant authorities (Personal Information Protection Commission, Korea Internet & Security Agency, etc.).
-
-Article 16 (Amendments to the Privacy Policy)
-This Privacy Policy shall apply from the effective date, and any changes due to amendments in laws or policies shall be announced within the App at least 7 days prior to the effective date.
-
-Supplementary Provisions
-This Privacy Policy shall take effect on January 1, 2026.
-</pre>
-</section>
-
-<section id="ja">
-<h2>個人情報処理方針</h2>
-<pre>
-クルーズアプリ（以下「アプリ」）は、「個人情報保護法」に基づき利用者の個人情報を保護し、関連する苦情を迅速かつ円滑に処理するため、以下のとおり個人情報処理方針を策定・公開します。
-
-第1条（収集する個人情報）
-アプリは、サービス提供のために以下の個人情報を収集します。
-1. 必須項目：メールアドレス、パスワード、ニックネーム
-2. 任意項目：プロフィール画像、自己紹介
-3. サービス利用過程で利用者が直接入力・生成する情報
-   イ. レビュー：タイトル、内容、評価（総合および詳細項目）、客室タイプ、旅行時期、添付画像
-   ロ. コミュニティ記事：タイトル、内容、添付画像
-   ハ. コメントおよび「いいね」
-   ニ. 旅行日程：日程タイトル、旅行日付、活動計画（時間、場所、メモ、予想費用）
-   ホ. お客様問い合わせ：メールアドレス、件名、問い合わせ内容
-4. 自動的に生成される情報：アカウント作成日時、コンテンツの作成・修正日時
-
-第2条（個人情報の収集方法）
-アプリは以下の方法で個人情報を収集します。
-1. 会員登録時に利用者が直接入力
-2. サービス利用過程で利用者が直接作成（レビュー、記事、コメント、日程、問い合わせ等）
-3. プロフィール設定時に利用者が直接登録（プロフィール画像、自己紹介）
-
-第3条（個人情報の収集および利用目的）
-収集した個人情報は、以下の目的でのみ利用します。
-1. 会員登録および管理：本人確認、登録意思の確認、会員識別
-2. サービス提供：レビューの作成・閲覧、コミュニティ記事の作成・閲覧、旅行日程管理等のサービス機能の提供
-3. お客様問い合わせ対応：問い合わせ内容の確認および処理結果の通知
-
-第4条（個人情報の保有および利用期間）
-1. 会員の個人情報は会員退会時まで保有し、退会申請時に遅滞なく破棄します。
-2. ただし、利用規約第6条に従い、会員が作成した投稿（レビュー、コメント、記事）は退会後もサービス内に維持され、作成者情報は非識別化処理（「退会したユーザー」）されます。投稿の削除を希望される場合は、退会前にご自身で削除するか、個人情報保護責任者（privacy@cruise-app.com）にご依頼ください。個人情報保護責任者にご依頼の場合、本人確認後30日以内に当該投稿を削除します。
-3. 関連法令により保存が義務付けられている情報がある場合、当該法令が定める期間中保存します。
-4. 不正利用防止のための記録（メールハッシュ値）：退会後30日間保存後に破棄
-
-第5条（個人情報の第三者提供）
-アプリは原則として利用者の同意なく個人情報を第三者に提供しません。ただし、以下の場合は例外とします。
-1. 利用者が事前に同意した場合
-2. 法令により要求される場合
-
-第6条（個人情報処理の委託）
-アプリはサービス提供のため、以下のとおり個人情報処理を委託しています。
-1. 受託者：Supabase Inc.
-   委託業務：クラウドインフラの提供（データ保存、認証処理、ファイル保存）
-   サーバー所在地：海外（米国）
-   保有期間：会員退会時または委託契約終了時まで
-運営チームは、委託業務遂行目的以外の個人情報処理を禁止し、技術的・管理的保護措置、再委託の制限、受託者に対する管理・監督等、「個人情報保護法」第26条に基づく事項を契約書等に明示し、受託者が個人情報を安全に処理するよう管理・監督します。
-
-第7条（個人情報の国外移転）
-アプリはサービス提供のため、以下のとおり個人情報を国外に移転します。
-1. 移転先：Supabase Inc.
-2. 移転先国：米国
-3. 移転日時および方法：サービス利用時にネットワークを通じた送信
-4. 移転される個人情報項目：第1条に記載のすべての収集項目
-5. 移転先の利用目的：クラウドインフラの提供（データ保存、認証処理、ファイル保存）
-6. 移転先の保有および利用期間：会員退会時または委託契約終了時まで
-
-第8条（個人情報の破棄）
-1. 保有期間の経過または処理目的の達成時に遅滞なく破棄します。
-2. 電子的ファイル形態の情報は、復元および再生が不可能な技術的方法で削除します。
-3. Supabase Storageに保存された画像ファイル（プロフィール写真、レビュー・記事添付画像）は、会員退会時に併せて削除します。
-
-第9条（利用者の権利および行使方法）
-利用者は以下の権利を行使することができます。
-1. 個人情報の閲覧請求
-2. 個人情報の訂正・削除請求
-3. 個人情報の処理停止請求
-4. 個人情報の収集・利用・提供に対する同意撤回
-
-上記の権利は、アプリ内の設定画面（プロフィール編集、会員退会）または個人情報保護責任者へのメールにより行使することができ、運営チームは遅滞なく必要な措置を講じます。
-
-第10条（個人情報の安全性確保措置）
-アプリは個人情報の安全性確保のため、以下の措置を実施しています。
-1. パスワードの暗号化：会員のパスワードは暗号化して保存・管理され、運営チームもこれを知ることはできません。
-2. 認証トークンの安全な保存：ログインセッション情報はデバイスのセキュアストレージ（iOS Keychain / Android Keystore）に暗号化して保存します。
-3. アクセス制御：個人情報を処理するシステムへのアクセス権限を制限しています。
-4. データの暗号化通信：個人情報は暗号化通信（SSL/TLS）を通じて送信されます。
-
-第11条（自動収集装置に関する事項）
-アプリはCookieを使用しません。アプリはサービス設定情報（言語、テーマ、通知設定、規約同意状況等）をデバイスの内部ストレージ（AsyncStorage）に保存しており、この情報は外部に送信されず、デバイス内でのみ使用されます。アプリは、広告識別子、デバイス固有識別子等、利用者を追跡するための自動収集装置を使用しません。
-
-第12条（満14歳未満の児童の個人情報）
-アプリは満14歳未満の児童の会員登録を受け付けず、満14歳未満の児童の個人情報を収集しません。
-
-第13条（個人情報保護責任者）
-個人情報処理に関する業務を総括する個人情報保護責任者は以下のとおりです。
-・氏名：CruiseMania 個人情報保護チーム
-・役職：個人情報保護責任者
-・メール：privacy@cruise-app.com
-利用者は、サービス利用中に発生した個人情報に関するお問い合わせ、苦情、被害救済等を上記連絡先にお問い合わせいただけます。
-
-第14条（権益侵害の救済方法）
-利用者は個人情報の侵害に対する被害救済を以下の機関にお問い合わせいただけます。
-・個人情報紛争調停委員会：（市外局番なし）1833-6972（www.kopico.go.kr）
-・個人情報侵害通報センター：（市外局番なし）118（privacy.kisa.or.kr）
-・大検察庁サイバー捜査課：（市外局番なし）1301（www.spo.go.kr）
-・警察庁サイバー捜査局：（市外局番なし）182（ecrm.cyber.go.kr）
-
-第15条（個人情報漏洩の通知）
-1. 運営チームは個人情報の漏洩事故が発生した場合、認知した時点から72時間以内に利用者に以下の事項を通知します：
-   イ. 漏洩した個人情報の項目
-   ロ. 漏洩の時期および経緯
-   ハ. 利用者が講じることができる措置
-   ニ. 運営チームの対応措置および被害救済手続き
-   ホ. 利用者が相談できる連絡先
-2. 通知は、アプリ内のお知らせ、メールまたはその他の適切な手段を通じて行われます。
-3. 漏洩事故が関連法令に定める規模以上の場合、関係機関（個人情報保護委員会、韓国インターネット振興院等）に速やかに届け出ます。
-
-第16条（個人情報処理方針の変更）
-本個人情報処理方針は施行日より適用され、法令または方針の変更がある場合、変更事項をアプリ内のお知らせを通じて適用日の7日前から公告します。
-
-附則
-本個人情報処理方針は2026年1月1日より施行します。
-</pre>
-</section>
-
-<section id="zh">
-<h2>隐私政策</h2>
-<pre>
-邮轮应用（以下简称"应用"）根据《个人信息保护法》，为保护用户的个人信息并确保相关投诉能够得到迅速、顺畅的处理，特制定并公开以下隐私政策。
-
-第1条（收集的个人信息）
-应用为提供服务收集以下个人信息。
-1. 必填项：电子邮箱地址、密码、昵称
-2. 选填项：头像、个人简介
-3. 用户在使用服务过程中直接输入或生成的信息
-   （一）评价：标题、内容、评分（综合及各分项）、舱房类型、旅行时间、附件图片
-   （二）社区帖子：标题、内容、附件图片
-   （三）评论和点赞
-   （四）旅行行程：行程标题、旅行日期、活动计划（时间、地点、备注、预估费用）
-   （五）客户咨询：电子邮箱地址、主题、咨询内容
-4. 自动生成的信息：账户创建时间、内容创建/修改时间
-
-第2条（个人信息的收集方式）
-应用通过以下方式收集个人信息。
-1. 注册时用户直接输入
-2. 使用服务过程中用户直接创建（评价、帖子、评论、行程、咨询等）
-3. 设置个人资料时用户直接上传（头像、个人简介）
-
-第3条（个人信息的收集及使用目的）
-收集的个人信息仅用于以下目的。
-1. 会员注册及管理：身份验证、注册意向确认、会员识别
-2. 服务提供：提供评价撰写与浏览、社区帖子撰写与浏览、旅行行程管理等服务功能
-3. 客户咨询回复：确认咨询事项并通知处理结果
-
-第4条（个人信息的保存及使用期限）
-1. 会员的个人信息保存至会员注销时，注销申请时立即销毁。
-2. 但根据服务条款第6条，会员发布的内容（评价、评论、帖子）在注销后仍保留在服务中，作者信息将进行去标识化处理（"已注销用户"）。如希望删除内容，请在注销前自行删除，或向个人信息保护负责人（privacy@cruise-app.com）提出申请。向个人信息保护负责人提出申请的，经身份验证后30天内删除相关内容。
-3. 如相关法律法规要求保存的信息，按该法律法规规定的期限予以保存。
-4. 防止滥用记录（电子邮箱哈希值）：注销后保存30天后销毁
-
-第5条（向第三方提供个人信息）
-应用原则上未经用户同意不向第三方提供个人信息。但以下情形除外：
-1. 用户事先同意的
-2. 法律法规要求的
-
-第6条（个人信息处理的委托）
-应用为提供服务，将个人信息处理委托如下。
-1. 受托方：Supabase Inc.
-   委托业务：提供云基础设施（数据存储、身份验证处理、文件存储）
-   服务器位置：境外（美国）
-   保存期限：至会员注销时或委托合同终止时
-运营团队禁止超出委托业务目的处理个人信息，并在合同等文件中明确《个人信息保护法》第26条规定的事项，包括技术和管理保护措施、再委托限制以及对受托方的管理和监督等，确保受托方安全处理个人信息。
-
-第7条（个人信息的跨境传输）
-应用为提供服务，将个人信息跨境传输如下。
-1. 接收方：Supabase Inc.
-2. 传输目的地国家：美国
-3. 传输时间及方式：使用服务时通过网络传输
-4. 传输的个人信息项目：第1条所列的所有收集项目
-5. 接收方的使用目的：提供云基础设施（数据存储、身份验证处理、文件存储）
-6. 接收方的保存及使用期限：至会员注销时或委托合同终止时
-
-第8条（个人信息的销毁）
-1. 保存期限届满或处理目的实现后立即销毁。
-2. 电子文件形式的信息采用无法恢复和再生的技术方法予以删除。
-3. 存储在Supabase Storage中的图片文件（头像、评价及帖子附件图片）在会员注销时一并删除。
-
-第9条（用户的权利及行使方式）
-用户可行使以下权利。
-1. 请求查阅个人信息
-2. 请求更正或删除个人信息
-3. 请求停止处理个人信息
-4. 撤回对个人信息收集、使用和提供的同意
-
-上述权利可通过应用内的设置界面（个人资料编辑、会员注销）或向个人信息保护负责人发送电子邮件行使，运营团队将及时采取必要措施。
-
-第10条（保障个人信息安全的措施）
-应用为保障个人信息安全采取以下措施。
-1. 密码加密：会员密码经加密后存储和管理，运营团队也无法获知。
-2. 认证令牌安全存储：登录会话信息经加密后存储在设备的安全存储空间（iOS Keychain / Android Keystore）中。
-3. 访问控制：限制对处理个人信息的系统的访问权限。
-4. 数据加密传输：个人信息通过加密通信（SSL/TLS）传输。
-
-第11条（关于自动收集装置的事项）
-应用不使用Cookie。应用将服务设置信息（语言、主题、通知设置、条款同意状态等）存储在设备内部存储（AsyncStorage）中，该信息不会传输到外部，仅在设备内使用。应用不使用广告标识符、设备唯一标识符等用于追踪用户的自动收集装置。
-
-第12条（未满14周岁儿童的个人信息）
-应用不接受未满14周岁儿童的会员注册，不收集未满14周岁儿童的个人信息。
-
-第13条（个人信息保护负责人）
-负责个人信息处理全面工作的个人信息保护负责人如下。
-・姓名：CruiseMania 个人信息保护团队
-・职务：个人信息保护负责人
-・电子邮箱：privacy@cruise-app.com
-用户可就使用服务过程中产生的个人信息相关咨询、投诉、损害救济等事宜联系上述联系方式。
-
-第14条（权益侵害救济途径）
-用户可就个人信息侵害向以下机构咨询。
-・个人信息纠纷调解委员会：（无区号）1833-6972（www.kopico.go.kr）
-・个人信息侵害举报中心：（无区号）118（privacy.kisa.or.kr）
-・大检察厅网络犯罪侦查科：（无区号）1301（www.spo.go.kr）
-・警察厅网络犯罪侦查局：（无区号）182（ecrm.cyber.go.kr）
-
-第15条（个人信息泄露通知）
-1. 发生个人信息泄露事故时，运营团队应在知悉后72小时内向用户通知以下事项：
-   （一）泄露的个人信息项目
-   （二）泄露的时间和经过
-   （三）用户可采取的措施
-   （四）运营团队的应对措施和损害救济程序
-   （五）用户可咨询的联系方式
-2. 通知通过应用内公告、电子邮件或其他适当方式进行。
-3. 泄露事故达到相关法律法规规定的规模以上的，应立即向相关机构（个人信息保护委员会、韩国互联网振兴院等）报告。
-
-第16条（隐私政策的变更）
-本隐私政策自施行之日起适用，如因法律法规或政策变更，变更事项将在适用日期前7天起通过应用内公告进行通知。
-
-附则
-本隐私政策自2026年1月1日起施行。
-</pre>
-</section>
-
+<h2>2. 정보의 이용 목적</h2>
+<div class="section">
+<ul>
+  <li>앱 비정상 종료 분석 및 안정성 개선</li>
+  <li>앱 사용 패턴 분석 및 서비스 품질 향상</li>
+  <li>이용자 문의 응대</li>
+</ul>
 </div>
 
-<div class="footer">
-  <p>&copy; 2026 CruiseMania. All rights reserved.</p>
-  <p><a href="terms.html">Terms of Service</a> · <a href="index.html">Support</a></p>
+<h2>3. 정보의 보유 및 파기</h2>
+<div class="section">
+<ul>
+  <li>비정상 종료 로그: 수집일로부터 90일간 보유 후 자동 삭제</li>
+  <li>앱 사용 통계: Firebase 기본 보유 기간(14개월)에 따라 자동 삭제</li>
+  <li>문의 내용: 응대 완료 후 1년간 보유 후 파기</li>
+</ul>
 </div>
 
-<script>
-function switchLang(lang) {
-  document.querySelectorAll('.content section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById(lang).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
+<h2>4. 제3자 제공</h2>
+<div class="section">
+<p>앱은 이용자의 개인정보를 제3자에게 제공하지 않습니다. 단, 법령에 의한 요청이 있는 경우 예외로 합니다.</p>
+</div>
+
+<h2>5. 위탁 처리</h2>
+<div class="section">
+<table style="width:100%; border-collapse: collapse;">
+  <tr style="background:#f5f5f5;"><th style="padding:8px; border:1px solid #ddd; text-align:left;">수탁업체</th><th style="padding:8px; border:1px solid #ddd; text-align:left;">위탁 업무</th></tr>
+  <tr><td style="padding:8px; border:1px solid #ddd;">Google Firebase (Google LLC)</td><td style="padding:8px; border:1px solid #ddd;">크래시 분석, 앱 사용 통계</td></tr>
+  <tr><td style="padding:8px; border:1px solid #ddd;">Supabase Inc.</td><td style="padding:8px; border:1px solid #ddd;">클라우드 데이터 저장</td></tr>
+</table>
+</div>
+
+<h2>6. 보안 조치</h2>
+<div class="section">
+<ul>
+  <li>모든 데이터 전송 시 SSL/TLS 암호화 적용</li>
+  <li>Supabase Row Level Security(RLS) 적용</li>
+  <li>HTTPS 통신 강제</li>
+</ul>
+</div>
+
+<h2>7. 이용자의 권리</h2>
+<div class="section">
+<p>본 앱은 회원가입 기능이 없어 별도의 개인정보 열람, 수정, 삭제 절차가 필요하지 않습니다. 앱을 삭제하면 기기 내 저장된 모든 데이터가 함께 삭제됩니다.</p>
+<p>자동 수집되는 분석 데이터에 관한 문의는 아래 연락처로 문의해 주세요.</p>
+</div>
+
+<h2>8. 아동의 개인정보 보호</h2>
+<div class="section">
+<p>본 앱은 만 14세 미만의 아동으로부터 개인정보를 수집하지 않습니다.</p>
+</div>
+
+<h2>9. 개인정보 보호책임자</h2>
+<div class="section">
+<ul>
+  <li>이메일: cruisemania93@gmail.com</li>
+</ul>
+</div>
+
+<h2>10. 개인정보처리방침의 변경</h2>
+<div class="section">
+<p>본 방침은 관련 법령이나 서비스 변경에 따라 수정될 수 있으며, 변경 시 앱 내 공지를 통해 안내합니다.</p>
+</div>
+
+<hr>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last Updated: May 17, 2026</p>
+
+<div class="section">
+<p>CruiseMania ("App") values your privacy and protects personal information in accordance with applicable laws. This Privacy Policy explains what information we collect and how we use it.</p>
+</div>
+
+<h2>1. Information We Collect</h2>
+<div class="section">
+<p>This App <strong>does not require account registration</strong> and does not directly collect personal information such as email addresses, passwords, or names.</p>
+
+<h3>Automatically Collected Information</h3>
+<p>The following information may be automatically collected to improve app stability and quality:</p>
+<ul>
+  <li>Crash logs — Firebase Crashlytics</li>
+  <li>App usage statistics (screen views, etc.) — Firebase Analytics</li>
+  <li>Device identifiers — automatically generated by Firebase</li>
+  <li>Device information (OS version, device model)</li>
+</ul>
+<p>This information is anonymized and cannot be used to identify individuals.</p>
+
+<h3>User-Provided Information</h3>
+<ul>
+  <li>Travel plans entered in the Trip Planner (stored on device)</li>
+  <li>Cruise experiences recorded in Cruise Collector (stored on device)</li>
+  <li>Email, subject, and message sent through Contact Us</li>
+</ul>
+</div>
+
+<h2>2. How We Use Information</h2>
+<div class="section">
+<ul>
+  <li>Analyzing app crashes and improving stability</li>
+  <li>Analyzing usage patterns and improving service quality</li>
+  <li>Responding to user inquiries</li>
+</ul>
+</div>
+
+<h2>3. Data Retention and Deletion</h2>
+<div class="section">
+<ul>
+  <li>Crash logs: retained for 90 days from collection, then automatically deleted</li>
+  <li>App usage statistics: automatically deleted per Firebase default retention period (14 months)</li>
+  <li>Inquiries: retained for 1 year after resolution, then deleted</li>
+</ul>
+</div>
+
+<h2>4. Third-Party Sharing</h2>
+<div class="section">
+<p>We do not share your personal information with third parties, except when required by law.</p>
+</div>
+
+<h2>5. Service Providers</h2>
+<div class="section">
+<table style="width:100%; border-collapse: collapse;">
+  <tr style="background:#f5f5f5;"><th style="padding:8px; border:1px solid #ddd; text-align:left;">Provider</th><th style="padding:8px; border:1px solid #ddd; text-align:left;">Purpose</th></tr>
+  <tr><td style="padding:8px; border:1px solid #ddd;">Google Firebase (Google LLC)</td><td style="padding:8px; border:1px solid #ddd;">Crash analytics, app usage statistics</td></tr>
+  <tr><td style="padding:8px; border:1px solid #ddd;">Supabase Inc.</td><td style="padding:8px; border:1px solid #ddd;">Cloud data storage</td></tr>
+</table>
+</div>
+
+<h2>6. Security Measures</h2>
+<div class="section">
+<ul>
+  <li>SSL/TLS encryption for all data transmission</li>
+  <li>Supabase Row Level Security (RLS)</li>
+  <li>HTTPS-only communication</li>
+</ul>
+</div>
+
+<h2>7. Your Rights</h2>
+<div class="section">
+<p>Since this App does not require account registration, there is no need for separate procedures to view, modify, or delete personal information. Uninstalling the App will delete all locally stored data.</p>
+<p>For inquiries regarding automatically collected analytics data, please contact us at the email below.</p>
+</div>
+
+<h2>8. Children's Privacy</h2>
+<div class="section">
+<p>This App does not knowingly collect personal information from children under 14 years of age.</p>
+</div>
+
+<h2>9. Contact</h2>
+<div class="section">
+<ul>
+  <li>Email: cruisemania93@gmail.com</li>
+</ul>
+</div>
+
+<h2>10. Changes to This Policy</h2>
+<div class="section">
+<p>This policy may be updated due to changes in applicable laws or services. Any changes will be communicated through in-app notifications.</p>
+</div>
+
 </body>
 </html>
